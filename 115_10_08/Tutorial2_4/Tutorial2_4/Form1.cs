@@ -1,0 +1,30 @@
+namespace Tutorial2_4
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void countryLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void finlandPictureBox_Click(object sender, EventArgs e)
+        {
+            countryLabel.Text = "芬蘭";
+        }
+
+        private void francePictureBox_Click(object sender, EventArgs e)
+        {
+            countryLabel.Text = "法國";
+        }
+
+        private void germanPictureBox_Click(object sender, EventArgs e)
+        {
+            countryLabel.Text = "德國";
+        }
+    }
+}
