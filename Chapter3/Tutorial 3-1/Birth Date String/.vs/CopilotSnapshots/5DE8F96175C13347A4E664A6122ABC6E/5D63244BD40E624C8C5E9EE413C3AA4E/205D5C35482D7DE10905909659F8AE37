@@ -1,0 +1,68 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Birth_Date_String
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void showDateButton_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(dayOfWeekTextBox.Text) ||
+                string.IsNullOrWhiteSpace(monthTextBox.Text) ||
+                string.IsNullOrWhiteSpace(dayOfMonthTextBox.Text) ||
+                string.IsNullOrWhiteSpace(yearTextBox.Text))
+            {
+                MessageBox.Show("請完整輸入日期資料。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(dayOfMonthTextBox.Text, out int dayOfMonth) || dayOfMonth < 1 || dayOfMonth > 31)
+            {
+                MessageBox.Show("月份中的日期必須是 1 到 31 之間的數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dayOfMonthTextBox.Focus();
+                return;
+            }
+
+            if (!int.TryParse(yearTextBox.Text, out _))
+            {
+                MessageBox.Show("年份必須是數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                yearTextBox.Focus();
+                return;
+            }
+
+            dateOutputLabel.Text = $"{dayOfWeekTextBox.Text}，{monthTextBox.Text} {dayOfMonth}，{yearTextBox.Text}";
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            dayOfWeekTextBox.Clear();
+            monthTextBox.Clear();
+            dayOfMonthTextBox.Clear();
+            yearTextBox.Clear();
+            dateOutputLabel.Text = string.Empty;
+            dayOfWeekTextBox.Focus();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+           this. Close();
+        }
+
+        private void dayOfMonthPromptLabel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
