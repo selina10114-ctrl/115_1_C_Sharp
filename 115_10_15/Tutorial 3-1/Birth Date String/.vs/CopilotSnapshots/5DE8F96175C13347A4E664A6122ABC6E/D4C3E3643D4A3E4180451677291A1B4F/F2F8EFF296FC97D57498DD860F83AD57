@@ -1,0 +1,188 @@
+﻿namespace Birth_Date_String
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.dayOfWeekTextBox = new System.Windows.Forms.TextBox();
+            this.monthTextBox = new System.Windows.Forms.TextBox();
+            this.dayOfMonthTextBox = new System.Windows.Forms.TextBox();
+            this.yearTextBox = new System.Windows.Forms.TextBox();
+            this.dayOfWeekPromptLabel = new System.Windows.Forms.Label();
+            this.monthPromptLabel = new System.Windows.Forms.Label();
+            this.dayOfMonthPromptLabel = new System.Windows.Forms.Label();
+            this.yearPromptLabel = new System.Windows.Forms.Label();
+            this.dateOutputLabel = new System.Windows.Forms.Label();
+            this.showDateButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // dayOfWeekTextBox
+            // 
+            this.dayOfWeekTextBox.Location = new System.Drawing.Point(431, 16);
+            this.dayOfWeekTextBox.Name = "dayOfWeekTextBox";
+            this.dayOfWeekTextBox.Size = new System.Drawing.Size(230, 55);
+            this.dayOfWeekTextBox.TabIndex = 0;
+            this.dayOfWeekTextBox.TextChanged += new System.EventHandler(this.dayOfWeekTextBox_TextChanged);
+            // 
+            // monthTextBox
+            // 
+            this.monthTextBox.Location = new System.Drawing.Point(431, 85);
+            this.monthTextBox.Name = "monthTextBox";
+            this.monthTextBox.Size = new System.Drawing.Size(230, 55);
+            this.monthTextBox.TabIndex = 1;
+            this.monthTextBox.TextChanged += new System.EventHandler(this.monthTextBox_TextChanged);
+            // 
+            // dayOfMonthTextBox
+            // 
+            this.dayOfMonthTextBox.Location = new System.Drawing.Point(431, 160);
+            this.dayOfMonthTextBox.Name = "dayOfMonthTextBox";
+            this.dayOfMonthTextBox.Size = new System.Drawing.Size(230, 55);
+            this.dayOfMonthTextBox.TabIndex = 2;
+            // 
+            // yearTextBox
+            // 
+            this.yearTextBox.Location = new System.Drawing.Point(431, 231);
+            this.yearTextBox.Name = "yearTextBox";
+            this.yearTextBox.Size = new System.Drawing.Size(230, 55);
+            this.yearTextBox.TabIndex = 3;
+            // 
+            // dayOfWeekPromptLabel
+            // 
+            this.dayOfWeekPromptLabel.AutoSize = true;
+            this.dayOfWeekPromptLabel.Location = new System.Drawing.Point(53, 26);
+            this.dayOfWeekPromptLabel.Name = "dayOfWeekPromptLabel";
+            this.dayOfWeekPromptLabel.Size = new System.Drawing.Size(200, 45);
+            this.dayOfWeekPromptLabel.TabIndex = 4;
+            this.dayOfWeekPromptLabel.Text = "請輸入星期";
+            // 
+            // monthPromptLabel
+            // 
+            this.monthPromptLabel.AutoSize = true;
+            this.monthPromptLabel.Location = new System.Drawing.Point(53, 95);
+            this.monthPromptLabel.Name = "monthPromptLabel";
+            this.monthPromptLabel.Size = new System.Drawing.Size(272, 45);
+            this.monthPromptLabel.TabIndex = 5;
+            this.monthPromptLabel.Text = "請輸入月份名稱";
+            // 
+            // dayOfMonthPromptLabel
+            // 
+            this.dayOfMonthPromptLabel.AutoSize = true;
+            this.dayOfMonthPromptLabel.Location = new System.Drawing.Point(53, 170);
+            this.dayOfMonthPromptLabel.Name = "dayOfMonthPromptLabel";
+            this.dayOfMonthPromptLabel.Size = new System.Drawing.Size(344, 45);
+            this.dayOfMonthPromptLabel.TabIndex = 6;
+            this.dayOfMonthPromptLabel.Text = "請輸入月份中的日期";
+            // 
+            // yearPromptLabel
+            // 
+            this.yearPromptLabel.AutoSize = true;
+            this.yearPromptLabel.Location = new System.Drawing.Point(53, 241);
+            this.yearPromptLabel.Name = "yearPromptLabel";
+            this.yearPromptLabel.Size = new System.Drawing.Size(200, 45);
+            this.yearPromptLabel.TabIndex = 7;
+            this.yearPromptLabel.Text = "請輸入年份";
+            // 
+            // dateOutputLabel
+            // 
+            this.dateOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dateOutputLabel.Location = new System.Drawing.Point(161, 316);
+            this.dateOutputLabel.Name = "dateOutputLabel";
+            this.dateOutputLabel.Size = new System.Drawing.Size(405, 42);
+            this.dateOutputLabel.TabIndex = 8;
+            this.dateOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // showDateButton
+            // 
+            this.showDateButton.Location = new System.Drawing.Point(61, 392);
+            this.showDateButton.Name = "showDateButton";
+            this.showDateButton.Size = new System.Drawing.Size(125, 45);
+            this.showDateButton.TabIndex = 9;
+            this.showDateButton.Text = "顯示日期";
+            this.showDateButton.UseVisualStyleBackColor = true;
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(296, 392);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(125, 45);
+            this.clearButton.TabIndex = 10;
+            this.clearButton.Text = "清除";
+            this.clearButton.UseVisualStyleBackColor = true;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(536, 392);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(125, 45);
+            this.exitButton.TabIndex = 11;
+            this.exitButton.Text = "離開";
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(21F, 45F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(715, 481);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.showDateButton);
+            this.Controls.Add(this.dateOutputLabel);
+            this.Controls.Add(this.yearPromptLabel);
+            this.Controls.Add(this.dayOfMonthPromptLabel);
+            this.Controls.Add(this.monthPromptLabel);
+            this.Controls.Add(this.dayOfWeekPromptLabel);
+            this.Controls.Add(this.yearTextBox);
+            this.Controls.Add(this.dayOfMonthTextBox);
+            this.Controls.Add(this.monthTextBox);
+            this.Controls.Add(this.dayOfWeekTextBox);
+            this.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Name = "Form1";
+            this.Text = "生日日期字串";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox dayOfWeekTextBox;
+        private System.Windows.Forms.TextBox monthTextBox;
+        private System.Windows.Forms.TextBox dayOfMonthTextBox;
+        private System.Windows.Forms.TextBox yearTextBox;
+        private System.Windows.Forms.Label dayOfWeekPromptLabel;
+        private System.Windows.Forms.Label monthPromptLabel;
+        private System.Windows.Forms.Label dayOfMonthPromptLabel;
+        private System.Windows.Forms.Label yearPromptLabel;
+        private System.Windows.Forms.Label dateOutputLabel;
+        private System.Windows.Forms.Button showDateButton;
+        private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Button exitButton;
+    }
+}
+
