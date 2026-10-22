@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sale_Price_Calculator
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            // 初始化表單上的所有控制項。
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            decimal originalPrice; // 儲存商品原價的變數。
+            decimal discountPercentage; // 儲存折扣百分比的變數。
+            decimal price;   // 儲存計算後的售價的變數。
+
+            originalPrice = decimal.Parse(originalPriceTextBox.Text); // 從商品原價輸入欄位取得原價。
+            discountPercentage = decimal.Parse(discountPercentageTextBox.Text); // 從折扣百分比輸入欄位取得折扣百分比。
+            salePriceLabel = originalPrice * (1 - discountPercentage / 100); // 計算售價。
+
+           salePriceLabel.Text = salePrice.ToString("C"); // 將計算後的售價顯示在售價標籤上，並以貨幣格式呈現。
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉目前的表單並結束操作。
+            this.Close();
+        }
+    }
+}
