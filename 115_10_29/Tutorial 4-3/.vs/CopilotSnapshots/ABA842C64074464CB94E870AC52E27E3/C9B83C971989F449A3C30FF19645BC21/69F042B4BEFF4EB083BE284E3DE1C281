@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Loan_Qualifier
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            // 初始化表單元件。
+            InitializeComponent();
+        }
+
+        private void checkButton_Click(object sender, EventArgs e)
+        {
+            // 設定符合貸款資格所需的最低年收入。
+            const decimal MIN_SALARY = 30000m;// 設定符合貸款資格所需的最低工作年資。
+            const int MIN_YEARS = 2; // 取得使用者輸入的年收入與工作年資。
+
+            decimal salary;
+            int yearsOnJob; 
+
+            try
+                {
+                salary = decimal.Parse(salaryTextBox.Text);
+                yearsOnJob = int.Parse(yearsTextBox.Text);
+
+                // 判斷使用者是否符合貸款資格。
+                if (salary >=)
+                {
+                   
+                }
+                else
+                {
+                    decisionLabel.Text = "不符合貸款資格";
+                }
+            }
+            catch (FormatException)
+            {
+                // 如果輸入格式不正確，顯示錯誤訊息。
+                MessageBox.Show("請輸入有效的數字。", "輸入錯誤");
+            }
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            // 清除輸入內容與審核結果。
+            salaryTextBox.Text = "";
+            yearsTextBox.Text = "";
+            decisionLabel.Text = "";
+
+            // 將游標移回年收入輸入框。
+            salaryTextBox.Focus();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉表單。
+            this.Close();
+        }
+    }
+}

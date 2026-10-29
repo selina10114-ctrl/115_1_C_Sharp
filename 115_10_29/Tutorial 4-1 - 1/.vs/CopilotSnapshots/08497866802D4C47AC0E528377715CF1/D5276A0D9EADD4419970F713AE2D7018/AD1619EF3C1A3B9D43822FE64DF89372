@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Test_Score_Average
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            // 初始化表單上的所有控制項。
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            // 宣告成績計算所需的變數。
+            const double MIN_SCORE = 95.0;
+            double test1, test2, test3, average;
+
+try
+            {
+
+            }
+catch (Exception ex)
+{
+        MessageBox.Show(ex.)
+        MessageBox.Show(ex Mess, "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            // 清除三個成績輸入框及平均分數顯示標籤的內容。
+            test1TextBox.Text = "";
+            test2TextBox.Text = "";
+            test3TextBox.Text = "";
+            averageLabel.Text = "";
+
+            // 將輸入焦點移回第一個成績輸入框。
+            test1TextBox.Focus();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉目前的表單。
+            this.Close();
+        }
+    }
+}
